@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "lint": "eslint .",
-    "prepare": "simple-git-hooks"
+    "prepare": "simple-git-hooks",
+    "release": "bumpp --commit \"chore: release v%s\" --push --tag && pnpm publish -r"
   },
   "devDependencies": {
     "@antfu/eslint-config-ts": "^0.38.5",

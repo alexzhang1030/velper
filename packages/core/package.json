@@ -1,3 +1,42 @@
 {
-  "name": "velper"
+  "name": "velper",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Yet another Vue helper library.",
+  "license": "MIT",
+  "homepage": "https://github.com/alexzhang1030/velper#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexzhang1030/velper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexzhang1030/velper/issues"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepublishOnly": "pnpm build",
+    "build": "tsup"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.47"
+  },
+  "dependencies": {
+    "uttype": "^0.2.1"
+  },
+  "devDependencies": {
+    "tsup": "^6.7.0",
+    "vue": "^3.2.47"
+  }
 }

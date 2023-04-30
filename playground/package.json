@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "velper": "workspace:*",
     "vue": "^3.2.47"
   },
   "devDependencies": {

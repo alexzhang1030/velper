@@ -1,7 +1,7 @@
 {
   "name": "velper",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Yet another Vue helper library.",
   "license": "MIT",
   "homepage": "https://github.com/alexzhang1030/velper#readme",

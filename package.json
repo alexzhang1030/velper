@@ -1,0 +1,27 @@
+{
+  "name": "velper",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config-ts": "^0.38.5",
+    "eslint": "^8.39.0",
+    "lint-staged": "^13.2.2",
+    "simple-git-hooks": "^2.8.1",
+    "typescript": "^5.0.4"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,json,md,yaml,yml}": [
+      "eslint --fix"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "@antfu/eslint-config-ts"
+  }
+}

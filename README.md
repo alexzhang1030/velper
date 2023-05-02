@@ -12,6 +12,8 @@ pnpm i -D velper
 
 ### ComponentProps
 
+If `vue >= 3.3`, we recommend you to use `ExtractPublicPropTypes` instead.
+
 ```ts
 import { ComponentProps } from 'velper'
 

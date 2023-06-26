@@ -36,7 +36,7 @@
     "uttype": "^0.2.1"
   },
   "devDependencies": {
-    "tsup": "^7.0.0",
+    "tsup": "^7.1.0",
     "vue": "^3.3.4"
   }
 }
